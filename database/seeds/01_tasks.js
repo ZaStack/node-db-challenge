@@ -9,28 +9,33 @@ exports.seed = function(knex) {
                     id: 1,
                     description: 'Stare at the screen for a while',
                     notes: '',
-                    completed: false
+                    completed: false,
+                    project_id: 1
                 },
                 {
                     id: 2,
                     description: 'Maybe get your brain working',
                     notes: '',
-                    completed: false
+                    completed: false,
+                    project_id: 1
                 },
                 { id: 3, 
                   description: 'Drink more coffee', 
                   notes: '', 
-                  completed: false 
+                  completed: false,
+                  project_id: 2 
                 },
                 { id: 4, 
                   description: 'Bang your head against desk', 
                   notes: '', 
-                  completed: false 
+                  completed: false,
+                  project_id: 2 
                 },
                 { id: 5, 
                   description: 'Do fuckall for the rest of the day', 
                   notes: '', 
-                  completed: false 
+                  completed: false,
+                  project_id: 3 
                 }
             ]);
         });
