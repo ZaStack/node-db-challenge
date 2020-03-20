@@ -1,21 +1,30 @@
-const db = require('../database/dbConfig')
+const db = require('../database/dbConfig');
 
-function add(project) {
-    return db('projects').insert(project)
+function addProject(project) {
+    return db('projects').insert(project);
 }
-function add(resource) {
-    return db('resources').insert(resource)
+function addResource(resource) {
+    return db('resources').insert(resource);
 }
-function add(task) {
-    return db('tasks').insert(task)
+function addTask(task) {
+    return db('tasks').insert(task);
 }
 
-function find() {
-    return db('projects')
+function findAllProjects() {
+    return db('projects');
 }
-function find() {
-    return db('resources')
+function findAllResources() {
+    return db('resources');
 }
-function find() {
-    return db('resources')
+function findAllTasks() {
+    return db('tasks');
 }
+
+module.exports = {
+    addProject,
+    addResource,
+    addTask,
+    findAllProjects,
+    findAllResources,
+    findAllTasks
+};
